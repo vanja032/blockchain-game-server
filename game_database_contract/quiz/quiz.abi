@@ -1,0 +1,368 @@
+{
+    "____comment": "This file was generated with inery-abigen. DO NOT EDIT ",
+    "version": "inery::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "deletea",
+            "base": "",
+            "fields": [
+                {
+                    "name": "question_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "answer",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "deleteq",
+            "base": "",
+            "fields": [
+                {
+                    "name": "question_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "deletes",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "deleteu",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "gamedata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_games_played",
+                    "type": "uint64"
+                },
+                {
+                    "name": "high_scores",
+                    "type": "pair_name_uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "get",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "inc",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "inserta",
+            "base": "",
+            "fields": [
+                {
+                    "name": "question_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "answer",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "insertq",
+            "base": "",
+            "fields": [
+                {
+                    "name": "question",
+                    "type": "string"
+                },
+                {
+                    "name": "answers",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "inserts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "score",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "insertu",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "email",
+                    "type": "string"
+                },
+                {
+                    "name": "password",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "pair_name_uint64",
+            "base": "",
+            "fields": [
+                {
+                    "name": "first",
+                    "type": "name"
+                },
+                {
+                    "name": "second",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "questions",
+            "base": "",
+            "fields": [
+                {
+                    "name": "question_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "question",
+                    "type": "string"
+                },
+                {
+                    "name": "answers",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "set",
+            "base": "",
+            "fields": [
+                {
+                    "name": "value",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "updatea",
+            "base": "",
+            "fields": [
+                {
+                    "name": "question_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "answers",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "updatem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "score",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "updateq",
+            "base": "",
+            "fields": [
+                {
+                    "name": "question_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "question",
+                    "type": "string"
+                },
+                {
+                    "name": "answers",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "updateu",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "email",
+                    "type": "string"
+                },
+                {
+                    "name": "password",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "users",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "email",
+                    "type": "string"
+                },
+                {
+                    "name": "password",
+                    "type": "string"
+                },
+                {
+                    "name": "max_score",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "deletea",
+            "type": "deletea",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deleteq",
+            "type": "deleteq",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deletes",
+            "type": "deletes",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deleteu",
+            "type": "deleteu",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "get",
+            "type": "get",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "inc",
+            "type": "inc",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "inserta",
+            "type": "inserta",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "insertq",
+            "type": "insertq",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "inserts",
+            "type": "inserts",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "insertu",
+            "type": "insertu",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "set",
+            "type": "set",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updatea",
+            "type": "updatea",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updatem",
+            "type": "updatem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updateq",
+            "type": "updateq",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updateu",
+            "type": "updateu",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "gamedata",
+            "type": "gamedata",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "questions",
+            "type": "questions",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "users",
+            "type": "users",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
