@@ -9,13 +9,13 @@ const Config = {
     SERVER_HOST: process.env.SERVER_HOST || "0.0.0.0",
     SERVER_PORT: process.env.SERVER_PORT || "8080",
     PROTOCOL: process.env.PROTOCOL || "http",
-    ALLOWED_ORIGINS: process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(",") : "*",
-    ALLOWED_METHODS: process.env.ALLOWED_METHODS ? process.env.ALLOWED_METHODS.split(",") : "*",
+    ALLOWED_ORIGINS: process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(",").length == 1 ? process.env.ALLOWED_ORIGINS.split(",")[0] : process.env.ALLOWED_ORIGINS.split(",") : "*",
+    ALLOWED_METHODS: process.env.ALLOWED_METHODS ? process.env.ALLOWED_METHODS.split(",").length == 1 ? process.env.ALLOWED_METHODS.split(",")[0] : process.env.ALLOWED_METHODS.split(",") : "*",
     SSL_CERT: process.env.SSL_CERT,
     SSL_KEY: process.env.SSL_KEY,
     LOGGING: process.env.LOGGING ? Boolean(process.env.LOGGING) : false,
     BLOCKCHAIN_ACCOUNT: process.env.ACCOUNT || "quiz",
-    SECURITY_KEY: process.env.SECURITY_KEY || "some_key"
+    SECURITY_KEY: process.env.SECURITY_KEY || "some_text"
 };
 
 module.exports = {
